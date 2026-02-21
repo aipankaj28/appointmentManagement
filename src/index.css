@@ -114,6 +114,40 @@ h3 {
   border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
+/* --- Mobile Responsiveness --- */
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+
+  .app-container {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .glass-card {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.75rem !important;
+  }
+}
+
 /* Animations */
 @keyframes fadeIn {
   from {

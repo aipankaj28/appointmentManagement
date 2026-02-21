@@ -142,7 +142,7 @@ const ClinicAdmin = () => {
     if (loading && sessionInfo) return <div className="glass-card animate-fade-in">Loading admin controls...</div>;
 
     return (
-        <div className="animate-fade-in responsive-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 350px', gap: '2rem' }}>
+        <div className="animate-fade-in responsive-grid">
             <div className="glass-card">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap', gap: '1rem' }}>
                     <div>

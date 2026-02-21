@@ -103,7 +103,7 @@ const ClinicCustomer = () => {
                         <Clock size={16} />
                         <span>{sessionInfo.name} Session</span>
                     </div>
-                    <span style={{ color: 'var(--glass-border)', display: 'none' }}>|</span>
+                    <span style={{ color: 'var(--glass-border)' }}>|</span>
                     <div className="badge badge-active" style={{ fontSize: '0.75rem' }}>Live Updates Enabled</div>
                 </div>
             </div>
