@@ -17,7 +17,7 @@ export const useTokens = (clinicId: string, sessionId: string) => {
         setLoading(true);
         // 1. Initial Fetch
         const fetchState = async () => {
-            const { data, error } = await supabase
+            const { data } = await supabase
                 .from('token_state')
                 .select('*')
                 .eq('clinic_id', clinicId)
